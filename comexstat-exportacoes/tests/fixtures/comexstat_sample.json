@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "data": {
+    "list": [
+      {
+        "coNcmSecrom": "V",
+        "year": "2022",
+        "monthNumber": "01",
+        "section": "Produtos minerais",
+        "metricFOB": "5219955882",
+        "metricKG": "31603110281"
+      },
+      {
+        "coNcmSecrom": "II",
+        "year": "2022",
+        "monthNumber": "01",
+        "section": "Produtos do reino vegetal",
+        "metricFOB": "2976733745",
+        "metricKG": "6222292839"
+      },
+      {
+        "coNcmSecrom": "V",
+        "year": "2022",
+        "monthNumber": "02",
+        "section": "Produtos minerais",
+        "metricFOB": "7044213005",
+        "metricKG": "27474171154"
+      },
+      {
+        "coNcmSecrom": "II",
+        "year": "2022",
+        "monthNumber": "02",
+        "section": "Produtos do reino vegetal",
+        "metricFOB": "4629962501",
+        "metricKG": "8342906229"
+      }
+    ]
+  }
+}
