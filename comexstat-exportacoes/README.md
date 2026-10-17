@@ -85,11 +85,11 @@ A carga local foi executada em 16/10/2026. A verificação encontrou 1.008 fatos
 1. **Executar a EDA na interface:** abra a pasta do projeto no VS Code, abra `notebooks/01_analise_exploratoria.ipynb`, selecione o interpretador Python do ambiente que tem as dependências instaladas e escolha **Run All**. O `.env` deve estar ao lado do README e conter o mesmo `PG_DSN`; não copie credenciais para as células.
 2. **Conectar o Power BI Desktop:** escolha **Obter dados > Banco de dados PostgreSQL**. Servidor: `localhost:5432`; banco: `comex_dw`; modo sugerido: Importar. Na primeira conexão, digite as credenciais do mesmo usuário PostgreSQL utilizado no `.env` na janela do Power BI (não as coloque no PBIX nem no Git).
 3. Selecione as tabelas `dim_tempo`, `dim_secao_produto` e `fato_exportacao_mensal`. Relacione cada dimensão (1) à fato (*), por `tempo_id` e `secao_id`; mantenha filtro unidirecional dimensão → fato. Marque `dim_tempo` como tabela de datas pela coluna `data_calendario` e ordene `nome_mes` por `numero_mes`.
-4. Crie as medidas DAX e visuais de referência em [métricas e storytelling](docs/metricas_e_storytelling.md). Confira o total anual com `sql/002_quality_checks.sql`, salve como `powerbi/exportacoes_brasil.pbix` e feche/reabra uma vez para validar que o relatório abre.
+4. Crie as medidas DAX e visuais de referência. Confira o total anual com `sql/002_quality_checks.sql`, salve como `powerbi/exportacoes_brasil.pbix` e feche/reabra uma vez para validar que o relatório abre.
 
 ## Explorar no Power BI
 
-Conecte o Power BI Desktop ao PostgreSQL local e selecione `dim_tempo`, `dim_secao_produto` e `fato_exportacao_mensal`. Crie/valide os relacionamentos com as chaves do modelo; medidas DAX e visuais sugeridos estão em [métricas e storytelling](docs/metricas_e_storytelling.md). Consulte [arquitetura](docs/arquitetura.md) e [qualidade e transformações](docs/qualidade_e_transformacoes.md) para configuração e decisões.
+Conecte o Power BI Desktop ao PostgreSQL local e selecione `dim_tempo`, `dim_secao_produto` e `fato_exportacao_mensal`. Crie/valide os relacionamentos com as chaves do modelo; medidas DAX e visuais. Consulte [arquitetura](docs/arquitetura.md) e [qualidade e transformações](docs/qualidade_e_transformacoes.md) para configuração e decisões.
 
 Na apresentação, demonstre extração e rastreabilidade, granularidade e esquema, validação dos totais, EDA e a pergunta respondida pelo dashboard.
 
