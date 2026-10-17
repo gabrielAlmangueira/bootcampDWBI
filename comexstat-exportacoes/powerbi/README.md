@@ -1,5 +1,7 @@
 # Power BI
 
+relatório exportado — [`exportacoes_Brasil.pdf`](./exportacoes_Brasil.pdf).
+
 Crie `exportacoes_brasil.pbix` nesta pasta usando Power BI Desktop. Conecte pelo conector PostgreSQL ao mesmo host/porta/banco de `PG_DSN` e selecione `dim_tempo`, `dim_secao_produto` e `fato_exportacao_mensal`.
 
 Configure os relacionamentos:
@@ -9,4 +11,4 @@ Configure os relacionamentos:
 
 Marque `dim_tempo` como tabela de datas com `data_calendario`. Ordene `nome_mes` por `numero_mes`. A dimensão contém todos os dias e os fatos mensais se relacionam com o primeiro dia de cada mês.
 
-Medidas de referência, validações, resultados e decisões de storytelling estão em `../docs/metricas_e_storytelling.md`. Confirme os totais contra PostgreSQL antes de salvar/publicar o relatório. Não salve credenciais no `.pbix`.
+Medidas de referência, validações, resultados e decisões de storytelling estão em `../docs/metricas_e_storytelling.md`. Confirme os totais contra PostgreSQL antes de salvar/publicar o relatório.
